@@ -1,8 +1,6 @@
 # Setup
 title:               'transneuro.science'
-tagline:             'transneuro.science'
-description:         'transneuro.science'
-url:                 transneuro.science
+url:                 https://transneuro.science
 baseurl:             ''
 paginate:            5
 permalink:           pretty
