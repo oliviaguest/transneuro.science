@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
+@font-face {
+    font-family: 'Endless Boss Battle';
+    src: url('../fonts/Endless-Boss-Battle.woff2') format('woff2'),
+        url('../fonts/Endless-Boss-Battle.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+h3 {
+  font-family: 'Endless Boss Battle';
+}
+
+
+body, html
+{
+  font-family: 'Quicksand', sans-serif;
+
+}

@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Endless Boss Battle';
+    src: url('Endless-Boss-Battle.woff2') format('woff2'),
+        url('Endless-Boss-Battle.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

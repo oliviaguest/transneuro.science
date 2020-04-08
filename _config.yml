@@ -1,0 +1,16 @@
+# Setup
+title:               'transneuro.science'
+tagline:             'transneuro.science'
+description:         'transneuro.science'
+url:                 transneuro.science
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y
