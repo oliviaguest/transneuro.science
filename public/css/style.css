@@ -11,7 +11,7 @@
 
 
 
-h3 {
+.masthead-title {
   font-family: 'Endless Boss Battle';
 }
 
@@ -20,4 +20,12 @@ body, html
 {
   font-family: 'Quicksand', sans-serif;
 
+}
+
+li.item{
+  padding-bottom: 1rem;
+}
+
+.container.content {
+    padding-left: 3rem;
 }

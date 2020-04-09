@@ -2,7 +2,43 @@
   type: journal
   status: published
   authors: Ashley, F.
-  title: '‘Trans’ is my gender modality: A modest terminological proposal.'
+  title: '‘Trans’ is my gender modality: A modest terminological proposal'
   journal: Trans Bodies, Trans Selves
   pdf: https://www.florenceashley.com/uploads/1/2/4/4/124439164/florence_ashley_trans_is_my_gender_modality.pdf
-  category: theory
+  category: "Theory"
+
+- date: 1984-01-01
+  title: "Masculinity, femininity, and gender-related traits: A conceptual analysis and critique of current research"
+  authors: Spence, J. T.
+  journal: Progress in experimental personality research
+  doi: 10.1037/0022-3514.64.4.624
+  category: "Social and Personality Psychology"
+
+- date: 1993-01-01
+  title: "Gender-related traits and gender ideology: evidence for a multifactorial theory"
+  authors: Spence, J. T.
+  journal: Journal of Personality and Social Psychology
+  doi: 10.1037/0022-3514.64.4.624
+  category: "Social and Personality Psychology"
+
+- date: 2013-01-01
+  authors: Carothers, B. J. & Reis, H. T.
+  journal: Journal of personality and social psychology
+  title: "Men and women are from Earth: Examining the latent structure of gender"
+  category: "Social and Personality Psychology"
+  doi: 10.1037/a0030437
+
+- date: 2016-04-01
+  authors: "Schneider, C., Cerwenka, S., Nieder, T. O., Briken, P., Cohen-Kettenis, P. T., De Cuypere, G., Haraldsen, I. R., Kreukels, B. P. C., & Richter-Appelt, H."
+  doi: 10.1007/s10508-016-0702-x
+  journal: Archives of Sexual Behavior
+  title: "Measuring Gender Dysphoria: A Multicenter Examination and Comparison of the Utrecht Gender Dysphoria Scale and the Gender Identity/Gender Dysphoria Questionnaire for Adolescents and Adults"
+  category: "Sexual Science"
+
+
+- date: 2016-09-01
+  authors: "McGuire, J. K. and Doty, J. L. and Catalpa, J. M. and Ola, C."
+  doi: 10.1016/j.bodyim.2016.06.004
+  journal: Body Image
+  title: "Body image in transgender young people: Findings from a qualitative, community based study"
+  category: "Social and Personality Psychology"

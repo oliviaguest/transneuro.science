@@ -1,24 +1,28 @@
 {% assign pubs = site.data.articles | sort:"date" | reverse %}
 
+<!-- create categories array-->
+{% assign categories = "" | split:"|" %}
 
-<ul class="item">
-  {% for pub in pubs %}
+<!--Add each unique category to the array-->
+{% for pub in pubs %}
+    {% for category in pub.category %}
+        {% assign categories = categories | push: category | uniq %}
+    {% endfor %}
+{% endfor %}
+
+{% assign categories = categories | sort %}
 
 
-    <li class="item">
+<!--Output the categories-->
+{% for category in categories %}
+    {% assign temp = pubs | where:"category",category %}
+    <h2>{{category}}</h2>
+    {% include print_articles.html pubs=temp %}
+{% endfor %}
 
-      {{ pub.authors }}
-      ({% if pub.status == 'inpress' %}{{ pub.status }}{% else %}{{pub.date | date: "%Y"}}{% endif %}).
-      <span class="title">{% if pub.doi %}
-      <a href="//dx.doi.org/{{ pub.doi }}">{{ pub.title }}</a>{% elsif pub.arxiv %}
-      <a href="{{ pub.arxiv }}">{{ pub.title }}</a>{% elsif pub.pdf %}
-      <a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %} {{ pub.title }}
-      {% endif %}</span>.
-      {% if pub.journal %}<i>{{ pub.journal }}</i>.
-      {% elsif pub.server %}<i>{{ pub.server }}</i>. {% endif %}
-      {% if pub.doi %}<a href="//dx.doi.org/{{ pub.doi }}">{{ pub.doi }}</a>.{% endif %}
-      {% if pub.arxiv-id %}<a href="{{ pub.arxiv }}">{{ pub.arxiv-id }}</a>.{% endif %}
-
-    </li>
-  {% endfor %}
-</ul>
+<!-- Only print uncategorised articles if they exist -->
+{% assign temp = pubs | where:"category",NULL %}
+{% if temp[0] %}
+  <h2>Uncategorised</h2>
+  {% include print_articles.html pubs=temp %}
+{% endif %}
