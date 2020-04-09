@@ -16,7 +16,9 @@
 <!--Output the categories-->
 {% for category in categories %}
     {% assign temp = pubs | where:"category",category %}
-    <a name="{{category}}"> <h2 id="{{category}}" id="{{category}}">{{category}}</h2></a>
+      <h2 id="{{category}}" id="{{category}}">
+        <a name="{{category}}">{{category}}</a>
+      </h2>
     {% include print_articles.html pubs=temp %}
 {% endfor %}
 

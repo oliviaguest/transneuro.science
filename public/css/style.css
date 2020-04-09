@@ -9,7 +9,9 @@
     font-style: normal;
 }
 
-
+h2 a, h2  a:hover
+{text-decoration: none;
+color: black;}
 
 .masthead-title {
   font-family: 'Endless Boss Battle';
