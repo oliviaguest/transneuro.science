@@ -22,7 +22,7 @@
 
 <!-- Only print uncategorised articles if they exist -->
 {% assign temp = pubs | where:"category",NULL %}
-{% if temp[0] %}
+{% if temp[0].category %}
   <h2>Uncategorised</h2>
   {% include print_articles.html pubs=temp %}
 {% endif %}
