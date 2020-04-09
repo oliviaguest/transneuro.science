@@ -16,12 +16,12 @@
 <!--Output the categories-->
 {% for category in categories %}
     {% assign temp = pubs | where:"category",category %}
-    <h2>{{category}}</h2>
+    <h2 name="{{category}}">{{category}}</h2>
     {% include print_articles.html pubs=temp %}
 {% endfor %}
 
 <!-- Only print uncategorised articles if they exist -->
-{% assign temp = pubs | where:"category",NULL %}
+{% assign temp = pubs | where:"category",'' %}
 {% if temp[0].category %}
   <h2>Uncategorised</h2>
   {% include print_articles.html pubs=temp %}
