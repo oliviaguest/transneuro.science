@@ -16,16 +16,14 @@
 <!--Output the categories-->
 {% for category in categories %}
     {% assign temp = pubs | where:"category",category %}
-      <h2 id="{{category}}" id="{{category}}">
-        <a name="{{category}}">{{category}}</a>
-      </h2>
-    {% include print_articles.html pubs=temp %}
+
+    <a class="sidebar-nav-item" href="#{{category}}">{{category}}</a>
+
 {% endfor %}
 
 <!-- Only print uncategorised articles if they exist -->
 {% assign temp = pubs | where:"category",'' %}
 {% if temp[0].category %}
-<h2 id="Uncategorised" id="Uncategorised">
-  <a name="Uncategorised">Uncategorised</a>
-</h2>  {% include print_articles.html pubs=temp %}
+  <a class="sidebar-nav-item" href="#Uncategorised">Uncategorised</a>
+
 {% endif %}
